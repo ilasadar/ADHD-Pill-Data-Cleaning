@@ -91,10 +91,7 @@ if previousadhdtx = "" then previousadhdtx = "N"; * changes missing values to "N
 keep patnum age gender previousadhdtx arm appetite changeInWeight weightDiff; * keeps the important variable;                           
                                                                                                                                         
 run;                                                                                                                                    
-                                                                                                                                        
-proc print;                                                                                                                             
-run;                                                                                                                                    
-                                                                                                                                        
+                                                                                                                                                                                                                
 /*export the dataset*/                                                                                                                  
 proc export data=clean                                                                                                                  
 outfile='E:\Stat 465\Final Project\CleanData.csv'                                                                                       
